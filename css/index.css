@@ -1,0 +1,119 @@
+@charset "utf-8";
+/* banner */
+.banner {
+    width: 1200px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.banner .bannerUl {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10000px;
+    height: 450px;
+    list-style: none;
+}
+.banner .bannerUl li {
+    float: left;
+}
+.banner .bannerUl a {
+    display: block;
+}
+.banner .bannerUl a img{
+    width: 1200px;
+    height: 450px;
+}
+
+
+.banner .btns {
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -25px;
+    line-height: 50px;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+.banner .btns .leftBtn, .banner .btns .rightBtn {
+    width: 30px;
+    color: rgba(255, 255, 255, .6);
+    cursor: pointer;
+}
+.banner .dot {
+    width: 100%;
+    height: 110px;
+    margin: 30px 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.banner .dot li {
+    margin: 0 5px;
+    width: 220px;
+    height: 110px;
+    cursor: pointer;
+}
+.banner .dot li img{
+    width: 220px;
+    height: 110px;
+    display: block;
+}
+.banner .dot li.active,.banner .dots li:hover {
+    border: 3px solid pink;
+    outline: 5px solid blue;    
+}
+
+
+
+/* main */
+.main {
+    background-color: #f7f7f7;
+}
+.main .hotBrand .detail img{
+    width: 397px;
+}
+.main .quality .detail img{
+    width: 297px;
+}
+.main .todayHot .detail .goods{
+    background: #fff;
+    width: 230px;
+    height: 325px;
+    float: left;
+}
+.main .todayHot .detail .goods .goods_img_box{
+    background: #fff;
+    width: 230px;
+    height: 325px;
+}
+
+/* aside */
+aside {
+    font: bold 14px/30px "微软雅黑";
+    color: #333;
+    text-align: center;
+    padding: 5px;
+    background-color: skyblue;
+
+    position: fixed;
+    right: 0;
+    bottom: 50px;
+
+    display: none;
+}
+aside p {
+    margin: 20px 10px;
+    border-bottom: 1px solid #999;
+}
+

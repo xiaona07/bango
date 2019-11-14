@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/list.css">
+</head>
+
+<body>
+    
+    <!-- header -->
+    <header>
+        <div class="welcome">
+            <div class="inner clearfix">
+                <p class="welLeft fl">
+                    欢迎来到邦购网，全场实付满99元包邮，本网站多为断码限量商品，支持14天无理由退换货，不支持退差价，感谢理解。
+                </p>
+                <div class="welRight fr">
+                    <div class="person" id="person">
+                        <a class="indexLog" id="indexLog" href="login.html">登录
+                        </a>
+                        <a class="indexReg" id="indexReg"  href="register.html">注册</a>
+                        <!-- <span>欢迎亲爱的<i>admin</i>光临</span>
+                        <a class="quit" id="quit"  href="#">退出</a> -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="logSearch">
+            <div class="inner clearfix">
+                <div class="log fl">
+                    <a href="index.html">
+                        <img src="https://s.banggo.com/pub7/images/mbshop/newImg/mbshop_new_logo2.png"
+                            style="margin-top: -10px; margin-left: -23px; display: block; opacity: 1;" width="266"
+                            height="73" alt="banggo">
+                    </a>
+                </div>
+                <div class="search fl">
+                    <div class="entrance fl">
+                        <form target="_self" action="" method="get">
+                            <input class="txt" type="text" value="11.11号0点开抢！前2h购物返30%邦购币">
+                            <input class="btn" type="button" value="搜索">
+                        </form>
+                    </div>
+                    <div class="quick fl">
+                        <a href="https://search.banggo.com/search/a_a.shtml?word=羽绒服">羽绒服</a>
+                        <span>|</span>
+                        <a class="red" href="https://search.banggo.com/search/a_a.shtml?word=毛衣&avn=1">毛衣</a>
+                        <span>|</span>
+                        <a href="https://search.banggo.com/search/a_a.shtml?word=外套">外套</a>
+                        <span>|</span>
+                        <a class="red" href="https://search.banggo.com/search/a_a.shtml?word=牛仔裤">牛仔裤</a>
+
+                    </div>
+                </div>
+                <div class="shoppingBag fr">
+                    <a href="#" >
+                        <p id="indexCar">购物袋<span>&nbsp;0&nbsp;</span>件</p>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- nav -->
+    <nav>
+        <div class="inner clearfix">
+            <ul class="navBar fl" style="position:relative">
+                <li>
+                    <div style="position:relative">
+                        <a class="category_top_link" href="https://www.banggo.com/">首页</a>
+                    </div>
+                </li>
+                <li class="title">
+                    <div>
+                        <a href="https://search.banggo.com/search/a_3_a_a_a_a_a_a_a_a_a_a.shtml">男装</a>
+                    </div>
+                    <div class="menu minH clearfix">
+                        <div class="subMenu fl">
+                            <dt>
+                                <a
+                                    href="https://search.banggo.com/search/a_15|16|18|19|20_a_4|MB_a_a_a_a_a_a_a_a_97-1741.shtml">上装</a>
+                            </dt>
+
+                            <a href="https://search.banggo.com/search/a_20_a_a_a_a_a_a_a_a_a_a_97-1741.shtml">卫衣</a>
+                            <a href="https://search.banggo.com/search/a_115_a_a_a_a_a_a_a_a_a_a_97-1741.shtml">长袖衬衫</a>
+                            <a href="https://search.banggo.com/search/a_134_a_a_a_a_a_a_a_a_a_a.shtml">夹克</a>
+                            <a href="https://search.banggo.com/search/a_18|130|132_a_a_a_a_a_a_a_a_a_a.shtml">毛衣</a>
+                            <a href="https://search.banggo.com/search/a_139_a_a_a_a_a_a_a_a_a_a.shtml">西装</a>
+                            <a href="https://search.banggo.com/search/a_133_a_a_a_a_a_a_a_a_a_a.shtml">风衣</a>
+                            <a href="https://search.banggo.com/search/a_137_a_a_a_a_a_a_a_a_a_a.shtml">大衣</a>
+                            <a href="http://search.banggo.com/search/a_140_a_a_a_a_a_a_a_a_a_a.shtml?avn=1">羽绒服</a>
+                            <a
+                                href="https://search.banggo.com/search/a_15|110|112|113_a_a_a_a_a_a_a_a_a_a.shtml">短袖T恤</a>
+                            <a href="https://search.banggo.com/search/a_116_a_a_a_a_a_a_a_a_a_a_97-1741.shtml">短袖衬衫</a>
+                            <a href="https://search.banggo.com/search/a_112_a_a_a_a_a_a_a_a_a_a_97-1741.shtml">长袖T恤</a>
+                        </div>
+                        <div class="subMenu last fl">
+                            <dt>
+                                <a href="https://search.banggo.com/search/a_17.shtml">下装</a>
+                            </dt>
+
+                            <a href="https://search.banggo.com/search/a_120_a_a_a_a_a_a_a_a_a_a_97-1741.shtml">牛仔长裤</a>
+                            <a href="https://search.banggo.com/search/a_124_a_a_a_a_a_a_a_a_a_a.shtml">休闲长裤</a>
+                            <a
+                                href="https://search.banggo.com/search/a_124|126|128|129_a_a_a_a_a_a_a_a_a_a_97-1741.shtml">针织休闲裤</a>
+                            <a href="https://search.banggo.com/search/a_123_a_a_a_a_a_a_a_a_a_a.shtml">西裤</a>
+                            <a href="https://search.banggo.com/search/a_122_a_a_a_a_a_a_a_a_a_a.shtml">牛仔中短裤</a>
+                            <a href="https://search.banggo.com/search/a_126_a_a_a_a_a_a_a_a_a_a.shtml">休闲中短裤</a>
+                            <a href="https://search.banggo.com/search/a_129_a_a_a_a_a_a_a_a_a_a.shtml">针织中短裤</a>
+                        </div>
+                    </div>
+
+                </li>
+                <li class="title">
+                    <div>
+                        <a href="https://search.banggo.com/search/a_4|13_a_a_a_a_a_a_a_a_a_a_97-203s.shtml?avn=1">女装</a>
+                    </div>
+                    <div class="menu minH clearfix lady">
+                        <div class="subMenu fl">
+                            <dt>
+                                <a href="https://search.banggo.com/search/a_26.shtml?avn=1">上装</a>
+                            </dt>
+
+                            <a href="https://search.banggo.com/search/a_148_a_a_a_a_a_a_a_a_a_a_97-1742.shtml">长袖衬衫</a>
+                            <a href="https://search.banggo.com/search/a_27_a_a_a_a_a_a_a_a_a_a_97-1742.shtml">卫衣</a>
+                            <a href="https://search.banggo.com/search/a_24.shtml?avn=1">毛衣</a>
+                            <a href="https://search.banggo.com/search/a_172_a_a_a_a_a_a_a_a_a_a_97-1742.shtml">夹克</a>
+                            <a
+                                href="https://search.banggo.com/search/a_171_a_a_a_a_a_a_a_a_a_a_97-203s.shtml?avn=1">风衣</a>
+                            <a
+                                href="https://search.banggo.com/search/a_175_a_a_a_a_a_a_a_a_a_a_97-203s.shtml?avn=1">大衣</a>
+                            <a href="https://search.banggo.com/search/a_174_a_a_a_a_a_a_a_a_a_a.shtml">棉服</a>
+                            <a href="http://search.banggo.com/search/a_178.shtml?avn=1">羽绒服</a>
+                            <a href="https://search.banggo.com/search/a_146_a_a_a_a_a_a_a_a_a_a_97-1742.shtml">短袖T恤</a>
+                            <a href="https://search.banggo.com/search/a_149_a_a_a_a_a_a_a_a_a_a_97-1742.shtml">短袖衬衫</a>
+                            <a href="https://search.banggo.com/search/a_145_a_a_a_a_a_2_-1_a_a_a.shtml?avn=1">长袖T恤</a>
+
+                        </div>
+                        <div class="subMenu fl">
+                            <dt>
+                                <a href="https://search.banggo.com/search/a_23.shtml?avn=1">下装</a>
+                            </dt>
+
+                            <a href="https://search.banggo.com/search/a_155_a_a_a_a_a_a_a_a_a_a_97-1742.shtml">牛仔长裤</a>
+                            <a href="https://search.banggo.com/search/a_159_a_a_a_a_a_a_a_a_a_a_97-1742.shtml">休闲长裤</a>
+                            <a href="https://search.banggo.com/search/a_163_a_a_a_a_a_a_a_a_a_a.shtml">针织裤</a>
+                            <a href="https://search.banggo.com/search/a_154_a_a_a_a_a_a_a_a_a_a.shtml">连身裤</a>
+                            <a href="https://search.banggo.com/search/a_157_a_a_a_a_a_a_a_a_a_a_97-1742.shtml">牛仔中短裤</a>
+                            <a href="https://search.banggo.com/search/a_161_a_a_a_a_a_a_a_a_a_a_97-1742.shtml">休闲中短裤</a>
+                        </div>
+                        <div class="subMenu fl">
+                            <dt>
+                                <a href="https://search.banggo.com/search/a_25.shtml?avn=1">裙装</a>
+                            </dt>
+
+                            <a href="https://search.banggo.com/search/a_710|711|712_a_a_a_a_a_a_a_a_a_a.shtml">连衣裙</a>
+                            <a href="https://search.banggo.com/search/a_169_a_a_a_a_a_a_a_a_a_a.shtml">半身裙</a>
+
+                        </div>
+                        <div class="subMenu last fl">
+                            <dt>
+                                <a
+                                    href="https://search.banggo.com/search/a_13_a_a_a_a_a_a_a_a_a_a_97-203s.shtml?avn=1">内衣</a>
+                            </dt>
+
+                            <a href="https://search.banggo.com/search/a_714_a_a_a_a_a_a_a_a_a_a.shtml">内衣上装</a>
+                            <a href="https://search.banggo.com/search/a_715_a_a_a_a_a_a_a_a_a_a.shtml">内衣下装</a>
+                            <a href="https://search.banggo.com/search/a_717_a_a_a_a_a_a_a_a_a_a.shtml">家居服</a>
+                            <a href="https://search.banggo.com/search/a_718_a_a_a_a_a_a_a_a_a_a.shtml">袜子</a>
+
+                        </div>
+                    </div>
+
+                </li>
+                <li class="title">
+                    <div>
+                        <a class="category_top_link" href="https://search.banggo.com/search/a_473.shtml?avn=1">儿童</a>
+                    </div>
+                    <div class="menu minH clearfix child">
+                        <div class="subMenu fl">
+                            <dt>
+                                <a href="https://search.banggo.com/search/a_474_a_a_a_a_a_a_a_a_a_a.shtml?avn=1">男童</a>
+                            </dt>
+
+                            <a
+                                href="https://search.banggo.com/search/a_650|675_a_a_a_a_a_a_a_a_a_a_97-1741|1742|1743|1744|2649.shtml">衬衫</a>
+                            <a
+                                href="https://search.banggo.com/search/a_653_a_a_a_a_a_a_a_a_a_a_97-1741|1742|1743|1744|2649.shtml">卫衣</a>
+                            <a
+                                href="https://search.banggo.com/search/a_657|658|659_a_a_a_a_a_a_a_a_a_a_97-1741|1742|1743|1744|2649.shtml">外套</a>
+                            <a href="https://search.banggo.com/search/a_662_a_a_a_a_a_a_a_a_a_a.shtml?avn=1">长裤</a>
+                            <a href="https://search.banggo.com/search/a_670_a_a_a_a_a_a_a_a_a_a.shtml?avn=1">鞋包配</a>
+                            <a
+                                href="https://search.banggo.com/search/a_648|673_a_a_a_a_a_a_a_a_a_a_97-1741|1742|1743|1744|2649.shtml">T恤</a>
+                            <a href="https://search.banggo.com/search/a_663_a_a_a_a_a_a_a_a_a_a.shtml?avn=1">中短裤</a>
+
+                        </div>
+                        <div class="subMenu fl">
+                            <dt>
+                                <a href="https://search.banggo.com/search/a_475_a_a_a_a_a_a_a_a_a_a.shtml?avn=1">女童</a>
+                            </dt>
+
+                            <a href="https://search.banggo.com/search/a_675_a_a_a_a_a_a_a_a_a_a.shtml?avn=1">衬衫</a>
+                            <a href="https://search.banggo.com/search/a_678_a_a_a_a_a_a_a_a_a_a.shtml">卫衣</a>
+                            <a href="https://search.banggo.com/search/a_680_a_a_a_a_a_a_a_a_a_a.shtml">外套</a>
+                            <a href="https://search.banggo.com/search/a_688_a_a_a_a_a_a_a_a_a_a.shtml">裙装</a>
+                            <a href="https://search.banggo.com/search/a_686_a_a_a_a_a_a_a_a_a_a.shtml">长裤</a>
+                            <a href="https://search.banggo.com/search/a_695_a_a_a_a_a_a_a_a_a_a.shtml">鞋包配</a>
+                            <a href="https://search.banggo.com/search/a_673_a_a_a_a_a_a_a_a_a_a.shtml?avn=1">T恤</a>
+                            <a href="https://search.banggo.com/search/a_687_a_a_a_a_a_a_a_a_a_a.shtml?avn=1">中短裤</a>
+
+                        </div>
+                        <div class="subMenu last fl">
+                            <dt>
+                                <a href="https://search.banggo.com/search/a_476_a_a_a_a_a_a_a_a_a_a.shtml">婴幼童</a>
+                            </dt>
+
+                            <a
+                                href="https://search.banggo.com/search/a_700_a_a_a_a_a_a_a_a_a_a_97-1741|1742|1743|1744|2649.shtml">连体衣</a>
+                            <a href="https://search.banggo.com/search/a_699_a_a_a_a_a_a_a_a_a_a.shtml">套装</a>
+                            <a href="https://search.banggo.com/search/a_704_a_a_a_a_a_a_a_a_a_a.shtml">下装</a>
+                            <a href="https://search.banggo.com/search/a_696_a_a_a_a_a_a_a_a_a_a.shtml">上装</a>
+
+                        </div>
+                    </div>
+
+                </li>
+                <li class="title">
+                    <div>
+                        <a class="category_top_link"
+                            href="https://search.banggo.com/search/a_490_a_a_a_a_a_a_a_a_a_a.shtml?avn=1">鞋履</a> </div>
+                    <div class="menu minH clearfix shoe">
+                        <div class="subMenu fl">
+                            <dt>
+                                <a
+                                    href="https://search.banggo.com/search/a_502|701_a_a_a_a_a_a_a_a_a_a_97-1741.shtml">人气男鞋</a>
+                            </dt>
+
+                            <a
+                                href="https://search.banggo.com/search/a_598_a_a_a_a_a_a_a_a_a_a_97-1741|1743|1744|2649.shtml">休闲鞋</a>
+                            <a
+                                href="https://search.banggo.com/search/a_599_a_a_a_a_a_a_a_a_a_a_97-1741|1743|1744|2649.shtml">运动鞋</a>
+                            <a href="https://search.banggo.com/search/a_600_a_a_a_a_a_a_a_a_a_a_97-1741.shtml">商务鞋</a>
+                            <a
+                                href="https://search.banggo.com/search/a_601_a_a_a_a_a_a_a_a_a_a_97-1741|1743|1744|2649.shtml">帆布鞋</a>
+                            <a href="https://search.banggo.com/search/a_604_a_a_a_a_a_a_a_a_a_a_97-1741.shtml">靴子</a>
+                            <a
+                                href="https://search.banggo.com/search/a_602|603_a_a_a_a_a_a_a_a_a_a_97-1741.shtml">凉/拖鞋</a>
+
+                        </div>
+                        <div class="subMenu last fl">
+                            <dt>
+                                <a
+                                    href="https://search.banggo.com/search/a_503_a_a_a_a_a_a_a_a_a_a.shtml?avn=1">人气女鞋</a>
+                            </dt>
+
+                            <a href="https://search.banggo.com/search/a_606_a_a_a_a_a_a_a_a_a_a_97-1742.shtml">休闲鞋</a>
+                            <a
+                                href="https://search.banggo.com/search/a_607_a_a_a_a_a_a_a_a_a_a_97-1742|1743|1744|2649.shtml">运动鞋</a>
+                            <a href="https://search.banggo.com/search/a_608_a_a_a_a_a_a_a_a_a_a.shtml">商务鞋</a>
+                            <a
+                                href="https://search.banggo.com/search/a_609_a_121|171|MB|MC|MM|MN|B2C|QG|KIDS|4M|GENANX|FUHAOGONGSHE|YBM|Pioneer_CampTUOLUZHE|haoduoyi|NIFENER|CARTELO|MILANGQISHI|WEIDANNUO|JIEMIKE|ANMO|RAPOO|DIALUN|yunshuixin|yuzhaolin|SabinePaul|LAOYECHE|Canshow|LMSALE|FEIBOYA|LINKTINA|PLUSWIND|LIYU|nanjiren_a_a_a_a_a_a_a_a_97-1742|1743|1744|2649.shtml">帆布鞋</a>
+                            <a href="https://search.banggo.com/search/a_612_a_a_a_a_a_a_a_a_a_a_97-1742.shtml">靴子</a>
+                            <a
+                                href="https://search.banggo.com/search/a_610|611_a_121|171|MB|MC|MM|MN|B2C|QG|4M_a_a_a_a_a_a_a_a_97-1742.shtml">凉/拖鞋</a>
+
+                        </div>
+                    </div>
+
+                </li>
+                <li class="title">
+                    <div>
+                        <a class="category_top_link"
+                            href="https://search.banggo.com/search/a_738_a_a_a_a_a_a_a_a_a_a.shtml?avn=1">箱包</a> </div>
+                    <div class="menu minH clearfix bag">
+                        <div class="subMenu fl">
+                            <dt>
+                                <a
+                                    href="https://search.banggo.com/search/a_739_a_a_a_a_a_a_a_a_a_a_97-1741|1742|1743|1744|2649.shtml">品质男包</a>
+                            </dt>
+
+                            <a
+                                href="https://search.banggo.com/search/a_746_a_a_a_a_a_a_a_a_a_a_97-1741|1743.shtml">钱包/手拿包</a>
+                            <a
+                                href="https://search.banggo.com/search/a_748_a_a_a_a_a_a_a_a_a_a_97-1741|1743.shtml">胸包</a>
+                            <a
+                                href="https://search.banggo.com/search/a_744_a_a_a_a_a_a_a_a_a_a_97-1741|1743.shtml">双肩包</a>
+
+                        </div>
+                        <div class="subMenu last fl">
+                            <dt>
+                                <a
+                                    href="https://search.banggo.com/search/a_740_a_a_a_a_a_a_a_a_a_a_97-1741|1742|1743|1744|2649.shtml">潮流女包</a>
+                            </dt>
+
+                            <a
+                                href="https://search.banggo.com/search/a_750_a_a_a_a_a_a_a_a_a_a_97-1742|1743.shtml">单肩包</a>
+                            <a
+                                href="https://search.banggo.com/search/a_751_a_a_a_a_a_a_a_a_a_a_97-1742|1743.shtml">双肩包</a>
+                            <a
+                                href="https://search.banggo.com/search/a_752_a_a_a_a_a_a_a_a_a_a_97-1742|1743.shtml">斜挎包</a>
+                            <a
+                                href="https://search.banggo.com/search/a_753_a_a_a_a_a_a_a_a_a_a_97-1742|1743.shtml">钱包/手拿包</a>
+                            <a href="https://search.banggo.com/search/a_754_a_a_a_a_a_a_a_a_a_a_97-1742.shtml">手提包</a>
+                            <a href="https://search.banggo.com/search/a_755_a_a_a_a_a_a_a_a_a_a.shtml">胸包/腰包</a>
+
+                        </div>
+                    </div>
+
+                </li>
+                <li class="title">
+                    <div>
+                        <a class="category_top_link"
+                            href="https://search.banggo.com/search/a_28_a_a_a_a_a_a_a_a_a_a.shtml">配饰</a> </div>
+                    <div class="menu minH clearfix decorations">
+                        <div class="subMenu last fl">
+                            <dt>
+                                <a
+                                    href="https://search.banggo.com/search/a_28|189|190|192|194|196_a_a_a_a_a_a_a_a_a_a_97-1741|1742|1743|1744|2649.shtml">配饰</a>
+                            </dt>
+
+                            <a href="http://search.banggo.com/search/a_189.shtml">帽子</a>
+                            <a
+                                href="https://search.banggo.com/search/a_194_a_a_a_a_a_a_a_a_a_a_97-203s.shtml">围巾/丝巾/披肩</a>
+                            <a href="https://search.banggo.com/search/a_196_a_a_a_a_a_a_a_a_a_a_.shtml">腰带/皮带</a>
+                            <a href="https://search.banggo.com/search/a_190_a_a_a_a_a_a_a_a_a_a.shtml">其他配饰</a>
+                            <a href="http://search.banggo.com/search/a_193.shtml">腕表</a>
+
+                        </div>
+                    </div>
+
+                </li>
+            </ul>
+            <div class="superise fr ">
+                <a href="https://www.banggo.com/Index/app">
+                    <img src="https://img.banggo.com/sources/cms/banggo2017/PC/pcxgxdyg.gif" alt="#">
+                </a>
+            </div>
+            <ul class="activity fl">
+                <li class="fl">
+                    <a href="https://www.banggo.com/theme/HP20161110.shtml?avn=1blank">
+                        <img src="https://img.banggo.com/sources/cms/banggo2017/PC/pcsyfl_2.png" alt=""
+                            style="opacity: 1;">
+                    </a>
+                </li>
+                <li class="fl">
+                    <a href="https://point.banggo.com/point">
+                        <img class="zhandianpic" src="https://img.banggo.com/sources/cms/banggo2017/PC/pcsyfl_4.png"
+                            alt="">
+                    </a>
+                </li>
+                <li class="fr">
+                    <a href="https://www.banggo.com/theme/APP828-190-1-1-922.shtml?avn=1">
+                        <img class="zhandianpic" src="https://img.banggo.com/sources/cms/banggo2017/PC/kiuyt.gif"
+                            alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- listmain -->
+    <div class="listmain">
+        <div class="inner">
+            <div class="navSearch clearfix">
+                <div class="breadNav fl">
+                    <a href="https://www.banggo.com" alt="邦购网首页">邦购网首页</a>
+                    &gt; <a href="//search.banggo.com/search/a_a.shtml" alt="所有分类">所有分类</a>
+                    &gt; <a href="//search.banggo.com/search/a_3.shtml" alt="男装">男装</a>
+                    &gt; <a href="//search.banggo.com/search/a_16.shtml" alt="衬衫">衬衫</a>
+                    &gt; <a href="//search.banggo.com/search/a_115.shtml" alt="长袖衬衫">长袖衬衫</a>
+                </div>
+                <div class="search fl">
+                    <form action="#">
+                        <input type="text">
+                    </form>
+                </div>
+            </div>
+            <div class="cont clearfix">
+                <div class="contLeft fl">
+                    <h2>分类</h2>
+                    <h3>长袖衬衫</h3>
+                </div>
+                <div class="contRight fr">
+                    <div class="option">
+                        <dl class="clearfix">
+                            <dt>品牌</dt>
+                            <dd>Metersbonwe</dd>
+                            <dd>Metersbonwe</dd>
+                            <dd>Metersbonwe</dd>
+                            <dd>Metersbonwe</dd>
+                            <dd>Metersbonwe</dd>
+                            <dd>Metersbonwe</dd>
+                            <dd>Metersbonwe</dd>
+                        </dl>
+                        <dl class="clearfix">
+                            <dt>品牌</dt>
+                            <dd>Metersbonwe</dd>
+                            <dd>Metersbonwe</dd>
+                            <dd>Metersbonwe</dd>
+                            <dd>Metersbonwe</dd>
+                            <dd>Metersbonwe</dd>
+                            <dd>Metersbonwe</dd>
+                            <dd>Metersbonwe</dd>
+                        </dl>
+                        <dl class="clearfix">
+                            <dt>品牌</dt>
+                            <dd>Metersbonwe</dd>
+                            <dd>Metersbonwe</dd>
+                            <dd>Metersbonwe</dd>
+                            <dd>Metersbonwe</dd>
+                            <dd>Metersbonwe</dd>
+                            <dd>Metersbonwe</dd>
+                            <dd>Metersbonwe</dd>
+                        </dl>
+                        <dl class="clearfix">
+                            <dt>品牌</dt>
+                            <dd>Metersbonwe</dd>
+                            <dd>Metersbonwe</dd>
+                            <dd>Metersbonwe</dd>
+                            <dd>Metersbonwe</dd>
+                            <dd>Metersbonwe</dd>
+                            <dd>Metersbonwe</dd>
+                            <dd>Metersbonwe</dd>
+                        </dl>
+                        <dl class="clearfix">
+                            <dt>品牌</dt>
+                            <dd>Metersbonwe</dd>
+                            <dd>Metersbonwe</dd>
+                            <dd>Metersbonwe</dd>
+                            <dd>Metersbonwe</dd>
+                            <dd>Metersbonwe</dd>
+                            <dd>Metersbonwe</dd>
+                            <dd>Metersbonwe</dd>
+                        </dl>
+                    </div>
+                    <p>为您找到<span class="num">1081</span>件商品</p>
+                    <ul class="goodsList clearfix" id="goodsList">
+                        <!-- <li class="goodsBox">
+                            <a class="img" href="https://www.banggo.com/goods/B14825.shtml" target="_blank">
+                                <img src="https://pic.banggo.com/sources/seller/goods/image/5200545/B14825/B14825_00.jpg?x-oss-process=image/resize,m_fill,w_300,h_410"
+                                    alt="#">
+                            </a>
+                            <div class="label clearfix">
+                                <a href="https://search.banggo.com/brand/a_a_a_celucasn.shtml" class="classfiy  fl"
+                                    target="_blank">潮流前线</a>
+                                <div class="discout fr">
+                                    <span>4.8</span>折
+                                </div>
+                            </div>
+                            <div class="name">
+                                <a href="https://www.banggo.com/goods/B14825.shtml"
+                                    target="_blank">男装冬季休闲运动字母印花针织连帽卫衣</a>
+                            </div>
+                            <div class="price">
+                                <b>￥66</b>
+                                <i>￥135</i>
+                            </div>
+                            <a href="#" target="_blank" class="smallImg">
+                                <img src="https://pic.banggo.com/sources/seller/goods/image/5200545/B14827/B14827_14-5200545-celucasn_01.jpg?x-oss-process=image/resize,m_fill,w_90"
+                                    alt="#">
+                            </a>
+
+
+                        </li> -->
+                    </ul>
+                    <div class="pageLabel">
+                        <ul class="clearfix"id="pageNum">
+                            <!-- <li class="detailNum">1</li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- bottom -->
+    <div class="bottom">
+        <div class="inner">
+            <ul class="botLeft fl">
+                <li>
+                    <a href="https://www.banggo.com/Index/app" target="_blank">
+                        <img alt="#" src="https://s.banggo.com/pub7/images/mbshop/20150720/zyshare01.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://weibo.com/gobanggo" target="_blank">
+                        <img src="https://s.banggo.com/pub7/images/mbshop/20150720/zyshare02.png" alt="#">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="https://s.banggo.com/pub7/images/mbshop/20150720/zyshare03.png" alt="#">
+                    </a>
+                </li>
+            </ul>
+            <div class="botRight">
+                <div class="cooperation">
+                    <a href="https://www.banggo.com/theme/2019zs.shtml?avn=1" target="_blank">
+                        <img src="https://img.banggo.com/sources/cms/banggo2017/PC/zsss.jpg">
+                    </a>
+                </div>
+                <ul class="online clearfix">
+                    <li>
+                        <a href="#">
+                            <img alt="#" src="https://s.banggo.com/pub7/images/mbshop/20150720/indexonline.png">
+                            <p>在线客服</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img src="https://s.banggo.com/pub7/images/mbshop/20150720/indexopinion.png" alt="#">
+                            <p>意见反馈
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img src="https://s.banggo.com/pub7/images/mbshop/20150720/indexsurvey.png" alt="#">
+                            <p>
+                                问卷调查
+                            </p>
+
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        <div class="bg"></div>
+        <div class="footerBott">
+            <div class="copy inner">
+                <p class="CopyRight">CopyRight © 2000-2019, 版权所有&nbsp;上海美特斯邦威服饰股份有限公司<a target="_blank"
+                        href="http://www.miitbeian.gov.cn">沪ICP备05033127号</a>|沪ICP证B2-20150114 021-38119999 &nbsp;<a
+                        target="_blank" href="//s.banggo.com/pub7/images/mbshop/newImg/mbshop_new_logo2jpg"
+                        style="color:#787878">营业执照</a></p>
+                <div class="copyImg">
+                    <img src="https://s.banggo.com/pub1/bgweb/default/images/lz_beian_h40.png" alt="#" style="width: 136px;
+                    height: 40px;">
+                    <img src="https://s.banggo.com/pub1/bgweb/default/images/lz_shgs_h40.png" alt="#" style="width: 117px;
+                    height: 40px;">
+                    <img src="https://s.banggo.com/pub1/bgweb/default/images/brand_bottom_small.jpg" alt="#" style="width: 117px;
+                    height: 40px;">
+                </div>
+            </div>
+        </div>
+        <div class="inner">
+            <div class="footerCont clearfix">
+                <dl>
+                    <dt>新手指南</dt>
+                    <dd><a target="_blank" href="/article.shtml?art=57">
+                            注册新用户</a></dd>
+                    <dd><a target="_blank" href="/article.shtml?art=58">
+                            用户协议</a></dd>
+                    <dd><a target="_blank" href="/article.shtml?art=59">
+                            找回密码</a></dd>
+                </dl>
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd><a target="_blank" href="/article.shtml?art=60">
+                            红包使用说明</a></dd>
+                    <dd><a target="_blank" href="/article.shtml?art=61">
+                            购物流程</a></dd>
+                    <dd><a target="_blank" href="/article.shtml?art=62">
+                            订单状态</a></dd>
+                    <dd><a target="_blank" href="/article.shtml?art=63">
+                            邦购币绑定与使用</a></dd>
+                </dl>
+                <dl>
+                    <dt>配送方式</dt>
+                    <dd><a target="_blank" href="/article.shtml?art=64">
+                            配送范围</a></dd>
+                    <dd><a target="_blank" href="/article.shtml?art=65">
+                            订单拆分</a></dd>
+                    <dd><a target="_blank" href="/article.shtml?art=66">
+                            商品验货与签收</a></dd>
+                </dl>
+                <dl>
+                    <dt>支付方式</dt>
+                    <dd><a target="_blank" href="/article.shtml?art=68">
+                            发票制度</a></dd>
+                    <dd><a target="_blank" href="/article.shtml?art=67">
+                            支付方式</a></dd>
+                </dl>
+                <dl>
+                    <dt>售后服务</dt>
+                    <dd><a target="_blank" href="/article.shtml?art=70">
+                            退换货政策</a></dd>
+                    <dd><a target="_blank" href="/article.shtml?art=69">
+                            退换办理流程</a></dd>
+                    <dd><a target="_blank" href="/article.shtml?art=71">
+                            退款说明</a></dd>
+                </dl>
+                <dl>
+                    <dt>联系方式</dt>
+                    <dd><a onclick="clickysf()" target="_blank">在线客服</a></dd>
+                    <dd>咨询电话：4008219988</dd>
+                </dl>
+            </div>
+
+        </div>
+    </footer>
+    <aside></aside>
+</body>
+<script src="libs/jquery.js"></script>
+<script src="js/public.js"></script>
+<script src="js/logRegQui.js"></script>
+<script src="js/list.js"></script>
+</html>

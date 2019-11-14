@@ -1,0 +1,44 @@
+@charset "utf-8";
+.inner {
+    width: 990px;
+    margin: 0 auto;
+}
+.t1 {
+    margin-top: 30px;
+}
+.register {
+    width: 990px;
+    border: 1px solid #eee;
+    /* box-sizing: content-box; */
+    margin: 50px 0;
+}
+.register .insert{
+    width: 500px;
+    margin: 0 auto;
+}
+
+.register .insert input{
+    width: 300px;
+    height: 26px;
+    border: 1px solid #ddd;
+    margin: 20px 10px ;
+    border-radius: 5px;
+    padding: 6px 20px;
+}
+.register .insert .user{
+
+}
+.register .insert .user{
+
+}
+.register .insert .btn input{
+    width: 50px;
+    margin-left: 180px;
+    background-color: skyblue;
+    padding: 0;
+    text-align: center;
+}
+
+.t2 {
+    width: 990px;
+}

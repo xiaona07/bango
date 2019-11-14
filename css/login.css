@@ -1,0 +1,40 @@
+@charset "utf-8";
+.inner {
+    width: 990px;
+    margin: 0 auto;
+}
+.t3 {
+    margin: 20px 0 0;
+}
+.loginall {
+    margin: 30px 0 0;
+}
+
+.loginall img {
+    width: 580px;
+}
+.login {
+    margin: 40px 0 0;
+}
+.login input{
+    width: 250px;
+    height: 26px;
+    border: 1px solid #ddd;
+    margin: 20px 10px ;
+    border-radius: 5px;
+    padding: 6px 20px;
+}
+.login .user{
+
+}
+.login .user{
+
+}
+.login .btn input{
+    width: 50px;
+    margin-left: 180px;
+    background-color: skyblue;
+    padding: 0;
+    text-align: center;
+
+}
