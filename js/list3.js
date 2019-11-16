@@ -27,7 +27,7 @@ class GoodsList {
                 str += `
                             <li class="goodsBox" goodsId="${that.res[a].id}">
                             <a class="img" href="detail.html" target="_blank" >
-                                <img data-src="${that.res[a].img}"
+                                <img src="${that.res[a].img}"
                                     alt="#">
                             </a>
                             <div class="label clearfix">
@@ -46,7 +46,7 @@ class GoodsList {
                                 <i>￥${that.res[a].original}</i>
                             </div>
                             <a href="#" target="_blank" class="smallImg">
-                                <img data-src="${that.res[a].img}"
+                                <img src="${that.res[a].img}"
                                     alt="#">
                             </a>
                             </li>
@@ -87,8 +87,10 @@ class GoodsList {
     }
     margin(){
         this.lis = this.goodsList.querySelectorAll("li");
+        console.log(this.lis);
         for (var i = 3; i < this.lis.length; i += 4){
             this.lis[i].style.marginRight = 0;
+            console.log(this.lis[i].style.marginRight)
         }
         this.nowGoods ();
     }
@@ -107,21 +109,6 @@ class GoodsList {
         //         localStorage.nowGoods = e.target.goodsId;
         //     }
         // }
-
-
-        this.imgAll = document.querySelectorAll(".listmain img");
-        this.clientH = document.documentElement.clientHeight;
-		this.scrollT = document.documentElement.scrollTop;
-        this.lazyLoad();
-    }
-    lazyLoad(){
-        console.log(1);
-        for(var i=0;i<this.imgAll.length;i++){
-            if(this.imgAll[i].offsetTop < this.clientH + this.scrollT){
-                this.imgAll[i].src = this.imgAll[i].getAttribute("data-src");
-            }
-        }
-
     }
 }
 new GoodsList();

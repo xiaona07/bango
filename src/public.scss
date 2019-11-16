@@ -1,0 +1,337 @@
+
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+.top {
+    height: 80px;
+    background-color: #b4130b;
+}
+.top a img {
+    width: 1200px;
+    height: 80px;
+    display: block;
+}
+header .welcome {
+    border-bottom: 1px solid #dcdcdc;
+    color: #999;
+    font-size: 12px;
+    font-weight: normal;
+
+}
+header .welcome .welLeft {
+    line-height: 32px;
+}
+
+
+
+
+
+header .welcome .welRight {
+    padding: 0 5px 0 0;
+}
+header .welcome .welRight .person {
+    font: 14px/32px "微软雅黑";
+}
+header .welcome .welRight .person  a{
+    color: #999;
+    margin: 0 40px;
+}
+header .welcome .welRight .person  span{
+    margin: 0 40px;
+}
+header .welcome .welRight .person  span i{
+    color: #d51819;
+}
+
+
+
+
+
+
+header .logSearch .inner{
+    padding-top: 5px;
+}
+header .logSearch .log{
+    width: 260px;
+    margin-top: 5px;
+}
+header .logSearch .log a{
+    width: 230px;
+    height: 55px;
+    float: left;
+    overflow: hidden;
+}
+header .logSearch .log a img{
+    margin-top: -10px;
+    margin-left: -23px;
+    display: block;
+    opacity: 1;
+}
+header .logSearch .search{
+    padding-top: 7px;
+}
+header .logSearch .search .entrance{
+    margin-top: 12px;
+    border: 1px #d51819 solid;
+}
+header .logSearch .search .entrance .txt{
+    width: 290px;
+    height: 22px;
+    padding: 5px;
+}
+header .logSearch .search .entrance .btn{
+    padding: 0 12px;
+    width: 80px;
+    height: 32px;
+    line-height: 32px;
+    text-align: right;
+    font-family: "微软雅黑", "宋体", "verdana";
+    font-size: 14px;
+    color: #fff;
+    background: #d51819;
+    vertical-align: top;
+    /* background: url(../images/gsize.jpg) no-repeat -48px center; */
+}
+header .logSearch .search .quick{
+    margin-top: 20px;
+    margin-left: 12px;
+    font: 14px/16px "微软雅黑";
+    color: #999;
+}
+header .logSearch .search .quick a{
+    color: #999;
+    padding: 0 5px;
+}
+header .logSearch .search .quick a.red{
+    color: #d51819;
+}
+header .logSearch .search .quick span{
+    font: 12px/18px "微软雅黑";
+}
+header .logSearch .shoppingBag{
+    margin: 22px 40px 0 0;
+    padding-left: 20px;
+}
+header .logSearch .shoppingBag a{
+        font: 16px/20px "微软雅黑";
+    color: #666;
+
+}
+header .logSearch .shoppingBag span{
+    color: #d51819;
+}
+nav {
+    width: 100%;
+    /* height: 38px; */
+    font: 14px/40px "微软雅黑";
+    color: #666;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 20px 0 0px;
+}
+nav .navBar{
+    /* width: 100%; */
+}
+nav .navBar li{
+    float: left;
+    padding: 0 18px;
+}
+nav .navBar a {
+    color: #666;
+    display: block;
+
+}
+.minH{
+    min-height: 300px;
+}
+nav .navBar .title:hover .menu {
+    display: block;
+}
+nav .navBar .menu {
+    background-color: #fff;
+    position: absolute;
+    left: 77px;
+    top: 40px;
+    padding: 5px 20px;
+    display: none;
+    z-index: 2;
+}
+nav .navBar .menu.lady {
+    left: 105px;
+    width: 350px;
+}
+nav .navBar .menu.child {
+    left: 175px;
+    width: 200px;
+}
+nav .navBar .menu.shoe {
+    left: 245px;
+    width: 200px;
+}
+nav .navBar .menu.bag {
+    left: 315px;
+    width: 200px;
+
+}
+nav .navBar .menu.decorations {
+    left: 385px;
+    width: 100px;
+}
+
+
+nav .navBar .menu  .subMenu{
+    margin-right: 30px;
+}
+nav .navBar .menu  .subMenu.last{
+    margin-right: 0;
+}
+nav .navBar .menu .subMenu dt{
+    font: 18px/40px "微软雅黑";
+    color: #d51819;
+}
+nav .navBar .menu .subMenu dt a{
+    font: 18px/40px "微软雅黑";
+    color: #d51819;
+}
+
+
+
+
+nav .activity{
+    margin: -10px 0 0 90px;
+}
+nav .activity li{
+    padding: 0 18px;
+}
+
+
+
+
+/* bottom */
+.bottom .inner {
+    padding-top: 53px;
+    overflow: hidden;
+}
+.bottom .botLeft li{
+    float: left;
+}
+.bottom .botLeft li a img{
+    width: 278px;
+}
+.bottom .botRight .online {
+    background-color: #f7f7f7;
+    padding-left:10px;
+}
+.bottom .botRight .online li{
+    
+    float: left;
+    padding: 16px 30px;
+}
+.bottom .botRight .online li a img{
+    margin-left: 5px;
+}
+.bottom .botRight .online li a p {
+    font: 12px/16px "微软雅黑";
+    color: #999;
+}
+/* footer */
+footer{
+    margin-top: 40px;
+}
+footer .bg{
+    height: 30px;
+    background-color: #f7f7f7;
+    border-top: 1px solid #ddd;
+}
+footer .footerBott {
+    padding-top: 140px;
+    padding-bottom: 20px;
+}
+footer .footerBott .copy {
+    text-align: center;
+    font: bold 14px/40px "微软雅黑";
+    color: #666;
+    border-top: 1px solid #999;
+
+}
+footer .footerBott .copy a{
+    color: #666;
+}
+footer .footerBott .copy .copyImg img{
+    width: 136px;
+    height: 40px;
+}
+footer .inner {
+    position: relative;
+}
+footer .footerCont{
+    position: absolute;
+    left: 0;
+    top: -270px;
+}
+footer .footerCont dl{
+    float: left;
+    margin: 0 50px;
+    font: 14px/28px "微软雅黑";
+    color: #666;
+
+}
+footer .footerCont dl a {
+    color: #666;
+}
+footer .footerCont dl dt {
+    font-weight: bold;
+    color: #333;
+
+}
+
+
+/* goodsBox */
+.goodsBox {
+    width: 230px;
+    float: left;
+    margin-top: 15px;
+    margin-right: 18px;
+    position: relative;
+
+    font: 14px/30px "微软雅黑";
+    color: #333;
+}
+.goodsBox a {
+    color: #333;
+    display: block;
+    
+}
+.goodsBox a.img {
+    width: 230px;
+    height: 315px;
+    background: #999;
+}
+.goodsBox .img img{
+    width: 230px;
+    height: 315px;
+}
+.goodsBox .label .discout {
+    background: pink;
+    border: 1px solid #d51819;
+    color: #d51819;
+    font: 14px/20px "微软雅黑";
+    margin-top: 5px;
+}
+.goodsBox .name{
+    max-height: 30px;
+    overflow: hidden;
+}
+.goodsBox .price i{
+    margin-left: 10px;
+    font: 400 14px "微软雅黑","黑体","宋体",verdana;
+    text-decoration: line-through;
+}
+.goodsBox .smallImg:hover{
+    outline: 1px solid #d51819;
+}
+.goodsBox .smallImg img{
+    width: 30px;
+    height: 30px;
+}
+

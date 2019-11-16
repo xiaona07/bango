@@ -65,7 +65,7 @@ class Magnify {
         this.smallImg.onmouseenter = function () {
             that.box.style.display = "block";
             that.bigImg.style.display = "block";
-            that.r = (that.smallImg.clientWidth - that.box.clientWidth) / (700 - that.smallImg.clientWidth);
+            that.r = that.box.clientWidth / that.smallImg.clientWidth;
             document.onmousemove = function (e) {
                 that.resultX = e.pageX - offset(that.smallImg).left - that.smallImg.clientLeft - that.box.clientWidth / 2;
                 that.resultY = e.pageY - offset(that.smallImg).top - that.smallImg.clientTop - that.box.clientHeight / 2;

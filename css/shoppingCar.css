@@ -47,8 +47,8 @@
     font: 16px/50px "微软雅黑";
 }
 .carmain .clearing ul.total li{
-    float: right;
-    margin-right: 10px;
+    /* float: right; */
+    margin-left: 850px;
 }
 
 .carmain .clearing ul.goodslist li.tnum span{

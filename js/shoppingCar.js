@@ -1,15 +1,15 @@
 class Car {
-    constructor () {
+    constructor() {
         this.clearing = document.getElementById("clearing");
         this.pay = document.getElementById("pay")
         this.url = "http://localhost/bango/data/list.json";
 
-        this.load ();
+        this.load();
     }
-    load () {
+    load() {
         var that = this;
-        if (localStorage.car){
-        
+        if (localStorage.car) {
+
             this.pay.style.display = "block";
             this.clearing.innerHTML = `
                     <ul class="theader clearfix" id="theader">
@@ -34,118 +34,170 @@ class Car {
             this.car = JSON.parse(localStorage.car);
             ajaxGet(this.url, function (res) {
                 that.res = JSON.parse(res);
-                
+
                 that.display();
             })
-    
-            
+
+
         }
-        
+
     }
-    display () {
+    display() {
         var that = this;
         var str = "";
-        for (var i = 0; i < this.car.length; i++){
-            var g = this.car[i].id ;
-            for (var j = 0; j < that.res.length; j++){
-                if (that.res[j].id == g){
-                    
+        for (var i = 0; i < this.car.length; i++) {
+            var g = this.car[i].id;
+            for (var j = 0; j < that.res.length; j++) {
+                if (that.res[j].id == g) {
+
                     str += `
                     <ul class="goodslist clearfix" id="goodslist" nowId="${g}" nowindex="${i}">
                         <li ><input type="checkbox" class="checkbox"></li>
                         <li class="tImg"><img src="${this.res[j].img}" alt="#" ></li>
                         <li class="tname">${this.res[j].name}</li>
                         <li>￥<span   class="realPrice">${this.res[j].price}</span></li>
-                        <li class="tnum"><span class="reduceNum nowId="${g}" nowindex="${i}">-</span><input type="text" value="${this.car[i].num}" class="changeNum"><span  class="addNum  nowId="${g}" nowindex="${i}">+</span></li>
-                        <li>￥<span  class="changePrice">${(this.res[j].price)*(this.car[i].num)}</span></li>
+                        <li class="tnum"><span class="reduceNum" nowId="${g}" nowindex="${i}">-</span><input type="text" value="${this.car[i].num}" class="changeNum"><span  class="addNum  nowId="${g}" nowindex="${i}">+</span></li>
+                        <li>￥<span  class="changePrice">${(this.res[j].price) * (this.car[i].num)}</span></li>
                         <li class="tdelete"><input type="button" value="删除" class="delete"  nowId="${g}" nowindex="${i}"></li>
                     </ul>
                      `;
-                     break
+                    break
                 }
             }
         }
         this.carList.innerHTML = str;
 
-        this.addEvent ();
-    }
-    addEvent () {
 
-        var that = this;
-        
+
         this.realPrices = document.querySelectorAll(".carList .realPrice");
-        
+
         this.checkboxs = document.querySelectorAll(".carList .checkbox");
         this.changeNums = document.querySelectorAll(".carList .changeNum");
-        this.reduceNums = document.querySelectorAll(".carList .reduceNum");
+        this.reduceNums = document.querySelectorAll(".reduceNum");
         this.addNums = document.querySelectorAll(".carList .addNum");
-        this.changePrices = document.querySelectorAll(".carList .changePrice");
+        this.changePrices = document.querySelectorAll(".changePrice");
         this.deletes = document.querySelectorAll(".carList .delete");
-        
 
 
-        for (var i = 0; i < reduceNums.length; i++){
-            this.reduceNums[i].onclick = function () {
-                if(that.changeNums[i] > 1){
-                    that.changeNums[i].value--;
+        // this.change();
 
 
-                    for (var i = 0; i < that.car.length; i++){
-                        if (that.car[i].id == this.reduceNums[i].nowId){
-                            that.car[i].num --;
-                            break
-                        }
-                    }
-                    
+        this.addEvent();
+    }
 
+    change() {
+        var that = this;
+        for (var i = 0; i < that.changePrices.length; i++) {
+            that.changePrices[i].innerHTML = that.realPrices[i].innerHTML * that.changeNums[i].value;
+        }
 
-                    localStorage.car = JSON.stringify(that.car);
-                    
-                }
+    }
+    changeAll() {
+        var that = this;
+        var total = 0;
+        for (var i = 0; i < this.checkboxs.length; i++) {
+            console.log(this.checkboxs.length);
+            if (this.checkboxs[i].checked) {
+                total += Number(that.changePrices[i].innerHTML);
+
             }
+        }
+        this.totalPrice.innerHTML = total;
+    }
+
+
+
+
+
+
+    addEvent() {
+
+        var that = this;
+
+
+        for (let i = 0; i < this.reduceNums.length; i++) {
+            this.reduceNums[i].onclick = function () {
+                if (that.changeNums[i].value > 1) {
+                    that.changeNums[i].value--;
+                    that.car[i].num--;
+                    localStorage.car = JSON.stringify(that.car);
+                }
+
+                that.change();
+                that.changeAll();
+            }
+
             this.addNums[i].onclick = function () {
                 that.changeNums[i].value++;
+                that.car[i].num++;
 
 
 
-                for (var i = 0; i < that.car.length; i++){
-                    if (that.car[i].id == this.addNums[i].nowId){
-                        that.car[i].num ++;
-                        break
-                    }
-                }
+                // for (var i = 0; i < that.car.length; i++) {
+                //     if (that.car[i].id == this.addNums[i].nowId) {
+                //         that.car[i].num++;
+                //         break
+                //     }
+                // }
                 localStorage.car = JSON.stringify(that.car);
-
-
+                that.change();
+                that.changeAll();
 
             }
             this.deletes[i].onclick = function () {
-                var b;
-                for (var i = 0; i < that.car.length; i++){
-                    if (that.car[i].id == this.deletes[i].nowId){
-                        
-                        b = i;
+                // var b;
+                // for (var i = 0; i < that.car.length; i++) {
+                //     if (that.car[i].id == this.deletes[i].nowId) {
 
-                        break
-                    }
-                }
-                that.car.splice(b,1);
+                //         b = i;
+
+                //         break
+                //     }
+                // }
+                that.car.splice(i, 1);
                 localStorage.car = JSON.stringify(that.car);
+                that.load();
 
 
             }
-        }
+            this.checkboxs[i].onclick = function () {
+                // if (this.checkboxs[i].checked == "checked") {
 
-        this.change();
-    }
-    change () {
-        var totalPrice = 0;
-        for (var i = 0; i < changePrices; i++){
-            this.changePrices[i].innerHTML = this.realPrices[i] * this.changeNums[i];
-            totalPrice += (this.realPrices[i] * this.changeNums[i]);
-        }
-        this.totalPrice = totalPrice;
+                // }
+                // that.change();
+                that.changeAll();
+                var flag =true;
+                for (var i = 0; i < that.checkboxs.length; i++){
+                    if (!(that.checkboxs[i].checked == "checked")){
+                        flag = false;
+                        that.chooseAll.checked = "";
+                        break
+                    }
+                }
+                if(flag){
+                    that.chooseAll.checked = "checked";
+                }
+            }
+            this.chooseAll.onclick = function (){
 
+                if (that.chooseAll.checked) {
+                    for (var i = 0; i < that.checkboxs.length; i++) {
+                        that.checkboxs[i].checked = "checked";
+                    }
+                } else {
+                    for (var i = 0; i < that.checkboxs.length; i++) {
+                        that.checkboxs[i].checked = "";
+                    }
+                }
+                that.changeAll();
+            }
+
+
+
+        }
+        // this.change();
     }
+
+
 }
-new Car ();
+new Car();
