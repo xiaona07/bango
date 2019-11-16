@@ -25,3 +25,5 @@
 
 
 7¡¢	±¸×¢£ºÎÞ£»
+
+gitµØÖ·£ºhttps://github.com/xiaona07/bango.git/
